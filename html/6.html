@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  
+<style>
+	/*Add style here*/
+	html, body {
+  height: 100%;
+  width: 100%;
+  background: #222;
+  overflow: hidden;
+}
+
+.rainbow {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.dot {
+  background-color: #82c545;
+  border-radius: 50%;
+  bottom: 0;
+  height: 30px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 30px;
+}
+
+.line {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 15px;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+}
+
+.line-1 {
+  border-color: #5d3191 #5d3191 transparent transparent;
+}
+
+.line-2 {
+  border-color: #c12680 #c12680 transparent transparent;
+}
+
+.line-3 {
+  border-color: #ed2861 #ed2861 transparent transparent;
+}
+
+.line-4 {
+  border-color: #f06045 #f06045 transparent transparent;
+}
+
+.line-5 {
+  border-color: #f8b739 #f8b739 transparent transparent;
+}
+
+.line-6 {
+  border-color: #82c545 #82c545 transparent transparent;
+}
+
+.line-7 {
+  border-color: #18a39b #18a39b transparent transparent;
+}
+
+.line-8 {
+  border-color: #2172b8 #2172b8 transparent transparent;
+}
+
+.line-9 {
+  border-color: #5d3191 #5d3191 transparent transparent;
+}
+
+.line-10 {
+  border-color: #c12680 #c12680 transparent transparent;
+}
+
+.line-11 {
+  border-color: #ed2861 #ed2861 transparent transparent;
+}
+
+.line-12 {
+  border-color: #f06045 #f06045 transparent transparent;
+}
+
+.line-13 {
+  border-color: #f8b739 #f8b739 transparent transparent;
+}
+
+.line-14 {
+  border-color: #82c545 #82c545 transparent transparent;
+}
+
+.line-15 {
+  border-color: #18a39b #18a39b transparent transparent;
+}
+
+.line-16 {
+  border-color: #2172b8 #2172b8 transparent transparent;
+}
+
+.line-17 {
+  border-color: #c12680 #c12680 transparent transparent;
+}
+
+.line-18 {
+  border-color: #ed2861 #ed2861 transparent transparent;
+}
+
+.line-19 {
+  border-color: #f06045 #f06045 transparent transparent;
+}
+
+.line-1 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.1s infinite;
+          animation: rotate 2.5s ease-in-out -0.1s infinite;
+  padding-top: 4.73684%;
+  width: 4.73684%;
+}
+
+.line-2 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.2s infinite;
+          animation: rotate 2.5s ease-in-out -0.2s infinite;
+  padding-top: 9.47368%;
+  width: 9.47368%;
+}
+
+.line-3 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.3s infinite;
+          animation: rotate 2.5s ease-in-out -0.3s infinite;
+  padding-top: 14.21053%;
+  width: 14.21053%;
+}
+
+.line-4 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.4s infinite;
+          animation: rotate 2.5s ease-in-out -0.4s infinite;
+  padding-top: 18.94737%;
+  width: 18.94737%;
+}
+
+.line-5 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.5s infinite;
+          animation: rotate 2.5s ease-in-out -0.5s infinite;
+  padding-top: 23.68421%;
+  width: 23.68421%;
+}
+
+.line-6 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.6s infinite;
+          animation: rotate 2.5s ease-in-out -0.6s infinite;
+  padding-top: 28.42105%;
+  width: 28.42105%;
+}
+
+.line-7 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.7s infinite;
+          animation: rotate 2.5s ease-in-out -0.7s infinite;
+  padding-top: 33.15789%;
+  width: 33.15789%;
+}
+
+.line-8 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.8s infinite;
+          animation: rotate 2.5s ease-in-out -0.8s infinite;
+  padding-top: 37.89474%;
+  width: 37.89474%;
+}
+
+.line-9 {
+  -webkit-animation: rotate 2.5s ease-in-out -0.9s infinite;
+          animation: rotate 2.5s ease-in-out -0.9s infinite;
+  padding-top: 42.63158%;
+  width: 42.63158%;
+}
+
+.line-10 {
+  -webkit-animation: rotate 2.5s ease-in-out -1s infinite;
+          animation: rotate 2.5s ease-in-out -1s infinite;
+  padding-top: 47.36842%;
+  width: 47.36842%;
+}
+
+.line-11 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.1s infinite;
+          animation: rotate 2.5s ease-in-out -1.1s infinite;
+  padding-top: 52.10526%;
+  width: 52.10526%;
+}
+
+.line-12 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.2s infinite;
+          animation: rotate 2.5s ease-in-out -1.2s infinite;
+  padding-top: 56.84211%;
+  width: 56.84211%;
+}
+
+.line-13 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.3s infinite;
+          animation: rotate 2.5s ease-in-out -1.3s infinite;
+  padding-top: 61.57895%;
+  width: 61.57895%;
+}
+
+.line-14 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.4s infinite;
+          animation: rotate 2.5s ease-in-out -1.4s infinite;
+  padding-top: 66.31579%;
+  width: 66.31579%;
+}
+
+.line-15 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.5s infinite;
+          animation: rotate 2.5s ease-in-out -1.5s infinite;
+  padding-top: 71.05263%;
+  width: 71.05263%;
+}
+
+.line-16 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.6s infinite;
+          animation: rotate 2.5s ease-in-out -1.6s infinite;
+  padding-top: 75.78947%;
+  width: 75.78947%;
+}
+
+.line-17 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.7s infinite;
+          animation: rotate 2.5s ease-in-out -1.7s infinite;
+  padding-top: 80.52632%;
+  width: 80.52632%;
+}
+
+.line-18 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.8s infinite;
+          animation: rotate 2.5s ease-in-out -1.8s infinite;
+  padding-top: 85.26316%;
+  width: 85.26316%;
+}
+
+.line-19 {
+  -webkit-animation: rotate 2.5s ease-in-out -1.9s infinite;
+          animation: rotate 2.5s ease-in-out -1.9s infinite;
+  padding-top: 90%;
+  width: 90%;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+            transform: translate(-50%, 50%) rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, 50%) rotate(-225deg);
+            transform: translate(-50%, 50%) rotate(-225deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+            transform: translate(-50%, 50%) rotate(-45deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+            transform: translate(-50%, 50%) rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, 50%) rotate(-225deg);
+            transform: translate(-50%, 50%) rotate(-225deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+            transform: translate(-50%, 50%) rotate(-45deg);
+  }
+}
+
+</style>
+</head>
+<body>
+<!-- Add content here -->
+<div class="rainbow">
+  <div class="line line-1"></div>
+  <div class="line line-2"></div>
+  <div class="line line-3"></div>
+  <div class="line line-4"></div>
+  <div class="line line-5"></div>
+  <div class="line line-6"></div>
+  <div class="line line-7"></div>
+  <div class="line line-8"></div>
+  <div class="line line-9"></div>
+  <div class="line line-10"></div>
+  <div class="line line-11"></div>
+  <div class="line line-12"></div>
+  <div class="line line-13"></div>
+  <div class="line line-14"></div>
+  <div class="line line-15"></div>
+  <div class="line line-16"></div>
+  <div class="line line-17"></div>
+  <div class="line line-18"></div>
+  <div class="line line-19"></div>
+  <div class="dot"></div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script>
+  //Add Script here
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <script src="../js/jquery.js"></script>
+  <script>
+  //Script here
+  
+  </script>
+<style>
+	/*style here*/
+body {
+  background-color: black;
+}
+
+#bod {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 30%;
+  border: solid 10px darkslategray;
+  overflow: hidden;
+  z-index: 10000;
+  box-shadow: 0 0 200px darkslategray;
+}
+
+.spoke {
+  background-color: grey;
+  position: absolute;
+  height: 175px;
+  width: 30px;
+  margin-left: -15px;
+  margin-top: -12.5px;
+  left: 50%;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.spoke + .spoke {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.spoke + .spoke + .spoke {
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.spoke + .spoke + .spoke + .spoke {
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+
+.cog {
+  position: absolute;
+  background-color: grey;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 10;
+  -webkit-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+}
+
+.cog + .cog {
+  -webkit-animation-delay: .19s;
+  -webkit-animation: spin2 5s infinite linear;
+  animation-delay: .19s;
+  animation: spin2 5s infinite linear;
+  margin-top: 160px;
+  margin-left: 30px;
+}
+
+.cog + .cog + .cog {
+  -webkit-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+  margin-top: 65px;
+  margin-left: 165px;
+}
+
+.hole {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 3000;
+  box-shadow: inset 0 0 90px darkslategray;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+</style>
+</head>
+<body>
+<!-- content here -->
+<div id="bod">
+  <div class="cog">
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="hole"></div>
+  </div>
+  <div class="cog">
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="hole"></div>
+  </div>
+  <div class="cog">
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="hole"></div>
+  </div>
+</div>
+</body>
+</html>
